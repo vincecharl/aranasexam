@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Homepage</title>
+
+<style>
+body {
+    margin: 0; padding: 0;
+    font-family: Arial, sans-serif; padding-top: 180px; 
+}  .row {
+    width: 100%; display: flex;
+    justify-content: space-between; margin-bottom: 0.1px;  
+} .row1, .row2, .row3, .row4 {
+    width: 48%; background: rgba(255,255,255,0.25); backdrop-filter: blur(0.1px);
+    padding: 20px; height: 50px; border-radius: 20px;
+    font-size: 30px; font-weight: bold; display: flex;
+    align-items: center; justify-content: center; cursor: pointer;
+} .row5 {
+    width: 98%; margin: 2px auto;
+    background: rgba(255,255,255,0.25);
+    backdrop-filter: blur(0.1px); padding: 20px;
+    height: 50px; border-radius: 20px;
+    font-size: 30px; font-weight: bold; display: flex;
+    align-items: center; justify-content: center;
+} header {
+    position: fixed; top: 0;
+    width: 100%; display: flex;
+    align-items: center; padding: 20px 40px;
+    background: rgba(109, 129, 171, 0.205);
+    color: rgba(255, 255, 255, 0.786);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.436);
+    z-index: 10; backdrop-filter: blur(0.1px);
+} header img.logo {
+    width: 150px; height: 150px;
+    border-radius: 55%; object-fit: cover;
+} header h1.centered-title {
+    position: absolute; left: 50%; transform: translateX(-50%);
+    margin: 0; font-size: 2rem; font-weight: bold;
+} section {
+    padding: 40px 20px;
+    color: #e1ddd9; max-width: 900px; margin: 40px auto;
+    background: rgba(255, 255, 255, 0.112); border-radius: 12px;
+    text-align: center; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.627);
+    transition: 0.4s; cursor: pointer; position: relative; overflow: hidden;
+    font-size: xx-large; font-weight: bold;
+} section a {
+    font-size: 24px; font-weight: bold; text-decoration: none; color: #1e2d4d;
+    transition: 0.3s; z-index: 2; position: relative;
+} section:hover {
+    color: #fff;
+    box-shadow: 0 0 20px #a2224fc0, 0 0 40px #d93a77ee, 0 0 60px #a21359 inset;
+    background: linear-gradient(135deg, rgba(228, 122, 74, 0.9) rgba(210, 118, 20, 0.9));
+} section:hover a {
+    color: #fff;
+    text-shadow: 0 0 5px #4b70e2, 0 0 10px #8a2be2, 0 0 15px #4b70e2;
+} footer {
+    text-align: center; color: white; padding: 20px 0;
+    background: rgba(0,0,0,0.6); font-weight: bold; margin-top: 40px;
+} section {
+    transition: all 0.3s ease;
+}
+
+</style>
+</head>
+
+<body>
+
+<img src="2ndpage.jpg" alt="Background Image"
+style="position: fixed; top: 0; left:0; width: 100%; height: 100%; 
+z-index: -1; object-fit: cover;">
+
+<header>
+    <img src="ics.jpg" class="logo">
+    <h1 class="centered-title">WELCOME TO MY HOMEPAGE</h1>
+</header>
+
+<div class="row">
+    <section class="row1" onclick="window.location.href='3rdPage.html'">
+        PERSONAL REFLECTION
+    </section>
+    <section class="row3" onclick="window.location.href='5thPage.html'">
+        INSPIRATIONAL PORTFOLIO
+    </section>
+</div>
+
+<h2 style="
+    text-align: center; font-size: 40px; font-weight: bold;
+    color: white; margin-top: 0.1px; margin-bottom: 0.1px;
+    text-shadow:
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 40px #ffffff,
+        0 0 80px #ffffff,
+        0 0 120px #ffffff,
+        2px 2px 4px black;
+">
+    UNA ANG GINOO
+</h2>
+
+<div class="row">
+    <section class="row2" onclick="window.location.href='4thPage.html'">
+        COMMUNITY SERVICE & ADVOCACY
+    </section>
+
+    <section class="row4" onclick="window.location.href='6thPage.html'">
+        EDUCATIONAL & INFORMATIONAL
+    </section>
+</div>
+
+<section class="row5" onclick="window.location.href='7thPage.html'">
+    FAITH & TECHNOLOGY INTEGRATION
+</section>
+
+<footer>
+    &copy; BY VINCE CHARL J. ARANAS || SEC-33 || BSCS-1
+</footer>
+
+</body>
+</html>
